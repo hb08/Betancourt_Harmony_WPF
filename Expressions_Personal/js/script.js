@@ -12,7 +12,8 @@ var savingLength = prompt("How many weeks do you plan to save?"); //Goal time
 var amountNeededWeekly = (ticketPrice - amountSaved) / savingLength; 
 
 //Convert to Months by dividing the time saving in weeks by four
-var months = savingLength / 4; 
+var months = savingLength / 4;
+//Find the amount needed per month by dividing the amount needed weekly times four 
 var amountNeededMonthly = amountNeededWeekly * 4;
 
 //Print to Console
