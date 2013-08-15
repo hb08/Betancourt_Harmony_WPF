@@ -22,17 +22,18 @@ var powerMods = [-1, 1, 1]
 //Unseen Calculations
   //How many points for the power before modifiers
 var plainCost = powerCost * powerRank;
- //Cost of Flaws
+  //Cost of Flaws
 var flawCost = powerRank * powerMods[0] * powerFlaws;
-//Cost of Extras
-var extrasCost = powerRank * powerMods[1] * powerExtras;
-//Cost of Power Feats
+  //Cost of Extras
+var extrasCost = powerRank * powerMods[1] * powerExtras; 
+  //Cost of Power Feats
 var featCost = powerMods[2] * powerFeats;
 
-//Calculation for total
+//Total Cost
 var totalCost = plainCost + flawCost + extrasCost + featCost;
 
-//Print to console
-console.log("The power point cost is " + totalCost + " power points in " + powerName + ". The break down of modifiers is: \n" + plainCost + " before modifiers\n"  + flawCost + " in flaws\n+" + extrasCost + " in extras\n+" + powerFeats + " in power feats.");
+
+//Print to console with warning about min/maxing
+console.log("The power point cost is " + totalCost + " power points in " + powerName + ". The break down of modifiers is: \n" + plainCost + " for " + powerRank + " ranks before modifiers\n"  + flawCost + " in flaws\n+" + extrasCost + " in extras\n+" + powerFeats + " in power feats.\nNote: If your flaws outnumber your ranks, please contact your GM for House Rules on min/maxing, as the sourcebook does not allow for such.");
   
   
