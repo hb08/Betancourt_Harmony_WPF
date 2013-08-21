@@ -4,6 +4,7 @@
     <list default="true" id="add75897-ec5b-4d68-aab1-acdaf0cb4e38" name="Default" comment="" />
     <ignored path="Values_Variables.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/script.js" changelist="add75897-ec5b-4d68-aab1-acdaf0cb4e38" time="1377123902119" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +27,10 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.04601227">
+            <state line="34" column="0" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.7592025">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#660#715#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -164,6 +166,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -298,9 +308,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.04601227">
+        <state line="34" column="0" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.7592025">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#660#715#0" expanded="false" />
           </folding>
         </state>
       </provider>
