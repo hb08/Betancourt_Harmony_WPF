@@ -75,8 +75,38 @@ if (birthYear === 1912 || birthYear === 1924 ||birthYear === 1936 || birthYear =
 }
 
 switch (westSign) {
+    case "Aquarius":
+        var westHoroscope = "friendly and humanitarian\nhonest and loyal\noriginal and inventive\nindependent and intellectual";
+        break;
+    case "Pisces":
+        var westHoroscope = "imaginative and sensitive\ncompassionate and kind\nselfless and unworldly\nintuitive and sympathetic";
+        break;
     case "Aries":
         var westHoroscope = "adventurous and energetic\npioneering and courageous\nenthusiastic and confident\ndynamic and quick-witted";
+        break;
+    case "Taurus":
+        var westHoroscope = "patient and reliable\nwarmhearted and loving\npersistent and determined\nplacid and security loving";
+        break;
+    case "Gemini":
+        var westHoroscope = "adaptable and versatile\ncommunicative and witty\nintellectual and eloquent\nyouthful and lively";
+        break;
+    case "Cancer":
+        var westHoroscope = "emotional and loving\nintuitive and imaginative\nshrewd and cautious\nprotective and sympathetic";
+        break;
+    case "Leo":
+        var westHoroscope = "generous and warmhearted\ncreative and enthusiastic\nbroad-minded and expansive\nfaithful and loving";
+        break;
+    case "Virgo":
+        var westHoroscope = "modest and shy\nmeticulous and reliable\npractical and diligent\nintelligent and analytical";
+        break;
+    case "Libra":
+        var westHoroscope = "diplomaitic and urbane\nromantic and charming\neasygoing and sociable\nidealistic and peaceable";
+        break;
+    case "Scorpio":
+        var westHoroscope = "determined and forceful\nemotional and intuitive\npowerful and passionate\nexciting and magnetic";
+        break;
+    case "Sagittarius":
+        var westHoroscope = "optimistic and freedom-loving\njovial and good-humored\nhonest and straightforward\nintellectual and philosophical";
         break;
 }
 
@@ -86,4 +116,4 @@ switch (eastSign) {
         break;
 }
 
-console.log("Your birthday is " + birthYear + "/" + birthMonth + "/" + birthDate + ".\nYour Western Astrology Sign is " + westSign + ". Your Chinese Astrology Animal Sign is " + eastSign + ".\nAs a " + westSign + ", you have the following traits:\n" + westHoroscope + "\nAs a " + eastSign + ", you have the following traits:\n" + eastHoroscope + ".\n\n\nWestern astrology information found at astrology-online.com.\nChinese astrology information found at chinesezodiac.com ");
+console.log("Your birthday is " + birthYear + "/" + birthMonth + "/" + birthDate + ".\nYour Western Astrology Sign is " + westSign + ". Your Chinese Astrology Animal Sign is " + eastSign + ".\n  As a " + westSign + ", you have the following traits:\n" + westHoroscope + "\n  As a " + eastSign + ", you have the following traits:\n" + eastHoroscope + ".\n\n\nWestern astrology information found at astrology-online.com.\nChinese astrology information found at chinesezodiac.com ");
