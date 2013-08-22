@@ -1,7 +1,6 @@
 // Title: Mutants and Masterminds 2nd Ed. Character Calculator  Author: Harmony Betancourt  Date: 8/22/13
 // Purpose: Calculates point total for entire character and compares PP level
-// Note: If this works, use for Claremont
-// Note 2: Try to notate as you go this time, silly!
+// Note: Once finished, use for Claremont
 
 // User givens via prompt
     // As for user's level goal
@@ -10,8 +9,8 @@ var goalLevel = prompt("What power level of character are you trying to create?"
     goalLevel = parseInt(goalLevel);
 
     // Calculate power point cost for level
-    var levelCost = 15 ;
-    levelCost *= goalLevel ;
+    var levelBuy = 15 ;
+    var levelCost = goalLevel * levelBuy ;
 
     // Attributes
         //Ask for total, if no total have ? to start If
@@ -107,7 +106,7 @@ var feats = prompt("How many power points have you spent in feats?\nIf you have 
         // If not calculated as shown by ?, begin prompts
     if (feats === "?") {
     // How many feats purchased
-    var featsBuy = prompt("How many feats have you put points in?");
+    var featsBuy = prompt("How many feats and level of feats have you purchased?");
         //set as int
         featsBuy = parseInt(featsBuy) ;
     // set skill cost
@@ -132,7 +131,53 @@ var drawbacks = prompt("How many power points have you gained in Drawbacks?") ;
         // set as int
     drawbackCost = parseInt(drawbacks) ;
 
-// Test
-console.log(levelCost + " " + attributeCost + " " + saveCost + " " + skillCost + " " + featsCost + " " + powerCost + " " +  drawbackCost);
+    // Combat
+        //Ask for total, if no total have ? to start If
+var combat = prompt("How many power points have you spent in combat?\nIf you have not calculated, enter ? to enter each score and calculate.");
+        // If not calculated as shown by ?, begin prompts
+        if (combat === "?") {
+            // Total defense
+        var defense = prompt("What is your total defense?");
+            // Total Attack
+        var attack = prompt("What is your total attack?")  ;
+            // set cost
+        var combatCost = 2 ;
+            //defense to int
+            defense = parseInt(defense);
+            //attack to int
+            attack = parseInt(attack);
+            // now the math
+        combatCost *= (attack + defense) ;
+           //set as int
+        combatCost= parseInt(combatCost) ;
+       // if they have total
+}   else {
+         //set cost to total
+    var combatCost = parseInt(combat);
+        }
 
+    //Total of Character
+        //Char total is all costs added, and drawback subtracted
+var charTotal = attributeCost + saveCost + skillCost + featsCost + powerCost + combatCost - drawbackCost   ;
+        //char level divided by level cost equals level
+var charLevel = charTotal/levelBuy ;
+        //make integer
+charLevel = parseInt(charLevel);
+
+    // Compare to goal
+        // If the char is over
+if (charTotal > levelCost) {
+        // print over
+    var goalPrint = "over" ;
+        // If the char is under
+} else if (charTotal < levelCost) {
+        // print under
+    var goalPrint = "under" ;
+        // otherwise
+} else {
+        // print equal to
+    var goalPrint = "equal to " ;
+}
+// Print to Console
+console.log("Your character is " + charTotal + " power points, and is level " + charLevel + ". This is " + goalPrint + " your goal of a Level " + goalLevel + " character  at exactly " + levelCost + " power points.\nThe breakdown is as follows:\n" + attributeCost + " pp - Attributes\n" + skillCost + " pp - Saves\n" + skillCost + " pp - Skills\n" + featsCost + " pp - Feats\n" + powerCost + " pp - Powers\n" + combatCost + " pp - Combat\n-" + drawbackCost + " pp - Drawbacks\n" ) ;
 
