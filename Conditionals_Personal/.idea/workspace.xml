@@ -5,6 +5,7 @@
     <ignored path="Values_Variables.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="add75897-ec5b-4d68-aab1-acdaf0cb4e38" time="1377203188027" ignored="false" />
+    <file path="/script.js" changelist="add75897-ec5b-4d68-aab1-acdaf0cb4e38" time="1377204243878" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.090361446">
+            <state line="51" column="5" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.8192771">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -174,6 +175,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -291,7 +300,9 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -310,7 +321,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.090361446">
+        <state line="51" column="5" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.8192771">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
