@@ -4,7 +4,7 @@
 //User givens via prompts
 var birthMonth = prompt("What month were you born?\nPlease give month number.")  ;
 var birthDate = prompt("What is day were you born?\nNumbers only, please.") ;
-var birthYear = prompt("What year were you born?");
+var birthYear = prompt("What year were you born? All four digits, please!");
 
 //Variable Processing
 var sunSign = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"];
@@ -71,7 +71,7 @@ if (birthYear === 1912 || birthYear === 1924 ||birthYear === 1936 || birthYear =
 } else if (birthYear === 1923 || birthYear === 1935 ||birthYear === 1947 || birthYear === 1959 || birthYear === 1971  || birthYear === 1983 ||birthYear === 1995 || birthYear === 2007 || birthYear === 2019 )  {
     var eastSign = animalSign[11];
 } else {
-    var eastSign = "unable to be calculated"
+    var eastSign = "year unable to be calculated"
 }
 
 switch (westSign) {
@@ -112,7 +112,43 @@ switch (westSign) {
 
 switch (eastSign) {
     case "the Rat":
-        var eastHoroscope = "wit, imagination and curiosity\nfull of energy, talkative and charming\ncapable of surviving any situation";
+        var eastHoroscope = "wit, imagination, curiosity\nfull of energy, talkative and charming\ncapable of surviving any situation";
+        break;
+    case "the Ox":
+        var eastHoroscope = "dependability, strength, determination\n icapable of trusting others, willing to listen to opinions with an open mind\nprefer the rural outdoors";
+        break;
+    case "the Tiger":
+        var eastHoroscope = "bravery, competitiveness and unpredictability\nstubborn, extremely generous,always on alert\nvery intelligent, charming, are well-liked by others";
+        break;
+    case "the Rabbit":
+        var eastHoroscope = "creativity, compassion, sensitivity\nclassy, sophisticated, expressive\nwell-mannered, stylish, neat and organized";
+        break;
+    case "the Dragon":
+        var eastHoroscope = "dominance, ambition, prefer to be alone\ndriven, unafraid of challenges, willing to take risks\npassionate in all they do";
+        break;
+    case "the Snake":
+        var eastHoroscope = "intelligence, gracefulness\nextremely analytical, materialistic\nseek peace,don’t jump into situations";
+        break;
+    case "the Horse":
+        var eastHoroscope = "strength, energy, outgoing nature\nalways in search of a good time, extremely intelligent, capable of multi-tasking\nhonest, friendly and open-minded";
+        break;
+    case "the Goat":
+        var eastHoroscope = "creativity, intelligence, dependability, calmness\nquiet, reserved  \nartistic expression, nurturing";
+        break;
+    case "the Monkey":
+        var eastHoroscope = "curiosity, mischievousness, cleverness\nforever playful, masters of practical jokes\ninherently intellectual, creative, thrive on being challenged";
+        break;
+    case "the Rooster":
+        var eastHoroscope = "confidence, pompousness, motivation\nloyal, trustworthy individuals, blunt\nextremely sociable, extremely organized";
+        break;
+    case "the Dog":
+        var eastHoroscope = "loyalty, compatibility, kindness\ndetermined individuals, value friendships, reliable\nwell-kept, organized, spend money wisely";
+        break;
+    case "the Boar":
+        var eastHoroscope = "diligence, compassion, generosity\nenjoy life, seek peace, giving\nenjoy spending, find great deals";
+        break;
+    default:
+        var eastHoroscope = "Sorry, without knowing your sign, you're an Enigma!";
         break;
 }
 
