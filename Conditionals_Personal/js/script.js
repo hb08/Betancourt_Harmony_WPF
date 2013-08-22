@@ -9,6 +9,10 @@ var goalLevel = prompt("What power level of character are you trying to create?"
         // Change to integer
     goalLevel = parseInt(goalLevel);
 
+    // Calculate power point cost for level
+    var levelCost = 15 ;
+    levelCost *= goalLevel ;
+
     // Attributes
         //Ask for total, if no total have ? to start If
 var attributes = prompt("How many power points have you spent in attributes?\nIf you have not calculated, enter ? to enter each score and calculate.");
@@ -50,7 +54,7 @@ var attributes = prompt("How many power points have you spent in attributes?\nIf
         // if they have total
     }  else {
         // set cost to total
-         var attributeCost = attributes;
+         var attributeCost = parseInt(attributes);
     }
 
     // Saves
@@ -77,7 +81,7 @@ var saves = prompt("How many power points have you spent in saves?\nIf you have 
        // if they have total
     }   else {
        //set cost to total
-        var saveCost = saves;
+        var saveCost = parseInt(saves);
     }
 
     // Skills
@@ -94,7 +98,41 @@ var skills = prompt("How many power points have you spent in skills?\nIf you hav
         // if they have total
     }   else {
         //set cost to total
-        var skillCost = skills;
+        var skillCost = parseInt(skills);
     }
 
-console.log(attributeCost+ " " +  saveCost  + " " + skillCost )   ;
+    // Feats
+        //Ask for total, if no total have ? to start If
+var feats = prompt("How many power points have you spent in feats?\nIf you have not calculated, enter ? to enter each score and calculate.");
+        // If not calculated as shown by ?, begin prompts
+    if (feats === "?") {
+    // How many feats purchased
+    var featsBuy = prompt("How many feats have you put points in?");
+        //set as int
+        featsBuy = parseInt(featsBuy) ;
+    // set skill cost
+    var featsCost = 1;
+    // calculate cost
+    featsCost *= featsBuy;
+    // if they have total
+}   else {
+    //set cost to total
+    var featsCost = parseInt(feats);
+}
+
+    // Powers
+        // Ask for total - they must know total at this point, add more when you learn to do loops and functions
+var powers = prompt("How many power points have you spent in Powers?") ;
+        // set as int
+    powerCost = parseInt(powers) ;
+
+    // Drawbacks
+        // Ask for total - they must know total at this point, add more when you learn to do loops and functions
+var drawbacks = prompt("How many power points have you gained in Drawbacks?") ;
+        // set as int
+    drawbackCost = parseInt(drawbacks) ;
+
+// Test
+console.log(levelCost + " " + attributeCost + " " + saveCost + " " + skillCost + " " + featsCost + " " + powerCost + " " +  drawbackCost);
+
+
