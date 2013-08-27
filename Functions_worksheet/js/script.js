@@ -7,9 +7,9 @@ var calCircum = function(d) {
     return circum;
 }
 //Prompt
-var diameter = prompt("What is the diameter of the circle?");
+var d = prompt("What is the diameter of the circle?");
 //Arguments
-var totalCircum = calCircum (5);
+var totalCircum = calCircum (d);
 // Print to console to test
 console.log("The circumference of the circle is " + totalCircum);
 
