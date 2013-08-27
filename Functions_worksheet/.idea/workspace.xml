@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291fb464-c735-4b42-8646-a1699047c5f4" name="Default" comment="" />
+    <list default="true" id="291fb464-c735-4b42-8646-a1699047c5f4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+    </list>
     <ignored path="Functions_worksheet.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="291fb464-c735-4b42-8646-a1699047c5f4" time="1377572323557" ignored="false" />
@@ -47,7 +49,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.101763904">
+            <state line="3" column="24" selection-start="118" selection-end="118" vertical-scroll-proportion="0.061058346">
               <folding />
             </state>
           </provider>
@@ -303,7 +305,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.101763904">
+        <state line="3" column="24" selection-start="118" selection-end="118" vertical-scroll-proportion="0.061058346">
           <folding />
         </state>
       </provider>
