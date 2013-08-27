@@ -14,7 +14,12 @@ var totalCircum = calCircum (d);
 console.log("The circumference of the circle is " + totalCircum);
 
 // Bee Stings
-
+//Anonymous Function
+var calStings = function (w) {
+    var killerStings = 8.666666667 ;
+    var deathCalc = w / killerStings;
+    return deathCalc ;
+}
 
 
 
