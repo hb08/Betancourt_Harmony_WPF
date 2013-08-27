@@ -10,6 +10,8 @@ var calCircum = function(d) {
 var diameter = prompt("What is the diameter of the circle?");
 //Arguments
 var totalCircum = calCircum (5);
+// Print to console to test
+console.log("The circumference of the circle is " + totalCircum);
 
 // Bee Stings
 
