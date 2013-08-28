@@ -5,7 +5,7 @@
     <ignored path="Values_Variables.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="add75897-ec5b-4d68-aab1-acdaf0cb4e38" time="1377643330332" ignored="false" />
-    <file path="/script.js" changelist="add75897-ec5b-4d68-aab1-acdaf0cb4e38" time="1377655416658" ignored="false" />
+    <file path="/script.js" changelist="add75897-ec5b-4d68-aab1-acdaf0cb4e38" time="1377659764121" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="40" selection-start="568" selection-end="568" vertical-scroll-proportion="0.2936747">
+            <state line="201" column="37" selection-start="8027" selection-end="8027" vertical-scroll-proportion="0.76489025">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -71,9 +71,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="241" />
-    <option name="y" value="65" />
-    <option name="width" value="1229" />
+    <option name="x" value="556" />
+    <option name="y" value="78" />
+    <option name="width" value="863" />
     <option name="height" value="787" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -220,13 +220,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="241" y="65" width="1229" height="787" extended-state="0" />
+    <frame x="556" y="78" width="863" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17900732" sideWeight="0.9924925" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25492468" sideWeight="0.9924925" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -319,7 +319,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="568" selection-end="568" vertical-scroll-proportion="0.2936747">
+        <state line="201" column="37" selection-start="8027" selection-end="8027" vertical-scroll-proportion="0.76489025">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
