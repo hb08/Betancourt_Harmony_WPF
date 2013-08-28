@@ -2,18 +2,48 @@
 // Purpose: Calculate how much you have saved since quitting smoking
 
 // User prompts
-var daysQuit = prompt("How many days has it been since your last cigarette?");
-    //convert to integer
-    daysQuit = parseInt(daysQuit);
 var packCost = prompt("How much did a pack of your preferred brand of cigarettes cost?");
 var dayCost = prompt("How many packs a day were you smoking?");
 var readOut = "";
 
 // Functions
+function convertTime() {
+      var years = prompt("How many years has it been since your last cigarette?");
+        if (years === "") {
+            years = 0;
+        } else {
+          //convert to integer
+          years = parseInt(years);
+          years *= 365;
+        }
+
+    var months = prompt("How many months has it been since your last cigarette?");
+        if (months === "") {
+            months = 0;
+        } else {
+        //convert to integer
+        months = parseInt(months);
+        months *= 30;
+        }
+    var days = prompt("How many days has it been since your last cigarette?\nInclude only days in addition to months and years, if applicable.");
+        if (days === "") {
+            days = 0;
+        } else {
+            //convert to integer
+            days = parseInt(days);
+        }
+
+    var totalDays = years + months + days;
+    return totalDays;
+}
+
 var moneySaved = function calcMoney(daysQuit, packCost, dayCost) {
     var saved = daysQuit * packCost * dayCost;
     return saved;
 }
+
+// Processing info
+var daysQuit = convertTime();
 
 // Readout on Effects
 if (daysQuit === 1) {
@@ -21,9 +51,9 @@ if (daysQuit === 1) {
 } else if (daysQuit === 2) {
     readOut = "Your damaged nerve endings are regrowing, and your sense of smell and taste are returning to normal. It's normal to be angry and irritable right now, but keep going, the hardest part is almost over!" ;
 } else if (daysQuit === 3) {
-    readOut = "Your body will test as completely nicotine-free. Withdrawls are at their worst, and you may feel restless. Your lungs are thanking you by working more efficiently, and your breathing should be easier. This is going to be one of your toughest days, but hang in there, you can do it!";
+    readOut = "Your body will test as completely nicotine-free. Withdrawals are at their worst, and you may feel restless. Your lungs are thanking you by working more efficiently, and your breathing should be easier. This is going to be one of your toughest days, but hang in there, you can do it!";
 } else if (daysQuit > 4 && daysQuit < 9) {
-    readOut = "You'll have around 3 cravings a day, but even if they seem to last forever, the cravings almost always last, at most, 3 minutes. Try to keep an eye on the time if you get a craving. If you can last five minutes, you can make this a permanent change!";
+    readOut = "You'll have around 3 cravings a day, but even if they seem to last forever, the cravings almost always last, at most, 3 minutes. Try to keep an eye on the time if you get a craving. If you can last five minutes, you are one step closer to a permanent change!";
 } else if (daysQuit === 10) {
     readOut = "You should have less than two cravings a day, and they should be under three minutes. You're well past the hardest part, congratulations and keep going!";
 } else if (daysQuit > 10 && daysQuit < 15) {
@@ -41,8 +71,7 @@ if (daysQuit === 1) {
 } else if (daysQuit > 2188 && daysQuit < 7300) {
     readOut = "Your risk of lung cancer is between 30% and 50% of that of a smoker. Your risk of death from lung cancer is almost half of what it was before. Cancer of the mouth, throat, and pancreas have declined. Risk of diabetes and coronary heart disease is almost that of someone who never lit up. Your risk of stroke is that of a non smoker, and your smoking induced tooth loss has declined to someone who never has smoked!" ;
 } else {
-    readOut = "Female risk of death from smoking related causes is that of someone who has never smoked. Risk of pancreatic cancer is the same. Great job going for the long haul, your body thanks you."
+    readOut = "Risk of pancreatic cancer and female risk of death from smoking related causes is that of someone who has never smoked. Great job going for the long haul, your body thanks you.";
 }
 
-// Processing info
 console.log("Since you quit smoking, " + daysQuit + " days ago, you have saved $" + moneySaved(daysQuit, packCost, dayCost) + ". " + readOut);
