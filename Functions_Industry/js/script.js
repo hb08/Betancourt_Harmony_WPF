@@ -16,6 +16,27 @@ var weekDay = ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Sat
 // Variable for new task hours base
 var newTask = 0;
 
+// Base Variables for Days of the Week Not Worked
+var monTask = weekDay[0] + " Not worked \n";
+var monHours = 0;
+var tueTask = weekDay[1] + " Not worked \n";
+var tueHours = 0;
+var wedTask = weekDay[2] + " Not worked \n";
+var wedHours = 0;
+var thuTask = weekDay[3] + " Not worked \n";
+var thuHours = 0;
+var friTask = weekDay[4] + " Not worked \n";
+var friHours = 0;
+var satTask = weekDay[5] + " Not worked \n";
+var satHours = 0;
+var sunTask = weekDay[6] + " Not worked \n";
+var sunHours = 0;
+
+//Function for new task
+function moreTaskFunction() {
+    //prompt for additional tasks
+    moreTask = prompt("Did you work on another task?");
+}
 //Function for tasks info
 function taskFunction (day) {
     var taskName = prompt(day + "\nWhat task did you work on?");
@@ -29,181 +50,165 @@ function taskFunction (day) {
     return taskTotal;
 }
 
-//Function for new task
-function moreTaskFunction() {
-    //prompt for additional tasks
-    moreTask = prompt("Did you work on another task on " + weekDay[0]);
-}
+
 
 // Logic
     //If Monday Worked    
 if (workMonday === "Yes" || workMonday === "yes" || workMonday === "Y" || workMonday === "y") {
-        // call function and assign to taskInfo
-        var taskInfo = taskFunction(weekDay[0]);
+        // call function and assign to monInfo
+        var monInfo = taskFunction(weekDay[0]);
         // create concoc. of day and info string
-        var monTask = weekDay[0] + taskInfo;
+        monTask = weekDay[0] + monInfo;
         // Hours worked
-        var monHours = parseFloat(taskInfo);
+        monHours = parseFloat(monInfo);
         //prompt for additional tasks
         moreTaskFunction();
             //If more tasks, then
             while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-             //start function
-            newTask = taskFunction(weekDay[0]);
-            // add together
-            monTask += newTask;
-            // find number of hours worked
-            monHours += parseFloat(newTask);
-            // Prompt again
-            moreTaskFunction() ;
+                 //start function
+                newTask = taskFunction("Monday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
             }
-     // If Monday NOT WORKED
-} else {
-        // easy print
-    var monTask = weekDay[0] + " Not worked \n";
-    var monHours = 0;
 }
-//If Tuesday Worked    
+
+//If Tuesday Worked
 if (workTuesday === "Yes" || workTuesday === "yes" || workTuesday === "Y" || workTuesday === "y") {
-    // call function and assign to taskInfo
-    var taskInfo = taskFunction(weekDay[1]);
-    // create concoc. of day and info string 
-    var tueTask = weekDay[1] + taskInfo;
-    //prompt for additional tasks
-    var moreTask = prompt("Did you work on another task on " + weekDay[1]);
-    //if Yes
-    if (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-        // start function
-        newTask = taskFunction (weekDay[1]);
-        // add together
-        tueTask += newTask;
-           //If No
-    }
-    var tueHours = parseFloat(taskInfo) + parseFloat(newTask);
-} else {
-    var tueTask = weekDay[1] + " Not worked\n";
-    var tueHours = 0;
+        // call function and assign to taskInfo
+        var tueInfo = taskFunction(weekDay[1]);
+        // create concoc. of day and info string
+        tueTask = weekDay[1] + tueInfo;
+        // Hours worked
+        tueHours = parseFloat(tueInfo);
+        //prompt for additional tasks
+        moreTaskFunction();
+            //If more tasks, then
+            while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
+                //start function
+                newTask = taskFunction("Tuesday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
+            }
 }
 //If Wednesday Worked    
 if (workWednesday === "Yes" || workWednesday === "yes" || workWednesday === "Y" || workWednesday === "y") {
-    // call function and assign to taskInfo
-    var taskInfo = taskFunction(weekDay[2]);
-    // create concoc. of day and info string 
-    var wedTask = weekDay[2] + taskInfo;
-    //prompt for additional tasks
-    var moreTask = prompt("Did you work on another task on " + weekDay[2]);
-    //if Yes
-    if (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-        // start function
-        newTask = taskFunction (weekDay[2]);
-        // add together
-        wedTask += newTask;
-        //If No
-    }  else {
-        //New Task is 0
-        newTask = 0;
-    }
-    var wedHours = parseFloat(taskInfo) + parseFloat(newTask);
-} else {
-    var wedTask = weekDay[2] + " Not worked\n";
-    var wedHours = 0;
+        // call function and assign to wedInfo
+        var wedInfo = taskFunction(weekDay[2]);
+        // create concoc. of day and info string
+        wedTask = weekDay[2] + wedInfo;
+        // Hours worked
+        wedHours = parseFloat(wedInfo);
+        //prompt for additional tasks
+        moreTaskFunction();
+            //If more tasks, then
+            while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
+                //start function
+                newTask = taskFunction("Wednesday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
+            }
 }
-//If Thursday Worked    
+//If Thu Worked    
 if (workThursday === "Yes" || workThursday === "yes" || workThursday === "Y" || workThursday === "y") {
-    // call function and assign to taskInfo
-    var taskInfo = taskFunction(weekDay[3]);
-    // create concoc. of day and info string 
-    var thuTask = weekDay[3] + taskInfo;
-    //prompt for additional tasks
-    var moreTask = prompt("Did you work on another task on " + weekDay[3]);
-    //if Yes
-    if (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-        // start function
-        newTask = taskFunction (weekDay[3]);
-        // add together
-        thuTask += newTask;
-        //If No
-    }  else {
-        //New Task is 0
-        newTask = 0;
-    }
-    var thuHours = parseFloat(taskInfo) + parseFloat(newTask);
-} else {
-    var thuTask = weekDay[3] + " Not worked\n";
-    var thuHours = 0;
+        // call function and assign to thuInfo
+        var thuInfo = taskFunction(weekDay[3]);
+        // create concoc. of day and info string
+        thuTask = weekDay[3] + thuInfo;
+        // Hours worked
+        thuHours = parseFloat(thuInfo);
+        //prompt for additional tasks
+        moreTaskFunction();
+        //If more tasks, then
+            while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
+                //start function
+                newTask = taskFunction("Thursday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
+            }
 }
 //If Friday Worked    
 if (workFriday === "Yes" || workFriday === "yes" || workFriday === "Y" || workFriday === "y") {
-    // call function and assign to taskInfo
-    var taskInfo = taskFunction(weekDay[4]);
-    // create concoc. of day and info string 
-    var friTask = weekDay[4] + taskInfo;
-    //prompt for additional tasks
-    var moreTask = prompt("Did you work on another task on " + weekDay[4]);
-    //if Yes
-    if (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-        // start function
-        newTask = taskFunction (weekDay[4]);
-        // add together
-        friTask += newTask;
-        //If No
-    }  else {
-        //New Task is 0
-        newTask = 0;
-    }
-    var friHours = parseFloat(taskInfo) + parseFloat(newTask);;
-} else {
-    var friTask = weekDay[4] + " Not worked\n";
-    var friHours = 0;
+        // call function and assign to friInfo
+        var friInfo = taskFunction(weekDay[4]);
+        // create concoc. of day and info string
+        friTask = weekDay[4] + friInfo;
+        // Hours worked
+        friHours = parseFloat(friInfo);
+        //prompt for additional tasks
+        moreTaskFunction(weekDay[4]);
+            //If more tasks, then
+            while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
+                //start function
+                newTask = taskFunction("Friday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
+            }
 }
 //If Saturday Worked    
 if (workSaturday === "Yes" || workSaturday === "yes" || workSaturday === "Y" || workSaturday === "y") {
-    // call function and assign to taskInfo
-    var taskInfo = taskFunction(weekDay[5]);
-    // create concoc. of day and info string 
-    var satTask = weekDay[5] + taskInfo;
-    //prompt for additional tasks
-    var moreTask = prompt("Did you work on another task on " + weekDay[5]);
-    //if Yes
-    if (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-        // start function
-        newTask = taskFunction (weekDay[5]);
-        // add together
-        satTask += newTask;
-        //If No
-    }  else {
-        //New Task is 0
-        newTask = 0;
-    }
-    var satHours = parseFloat(taskInfo) + parseFloat(newTask);
-} else {
-    var satTask = weekDay[5] + " Not worked\n";
-    var satHours = 0;
+        // call function and assign to satInfo
+        var satInfo = taskFunction(weekDay[5]);
+        // create concoc. of day and info string
+        satTask = weekDay[5] + satInfo;
+        // Hours worked
+        satHours = parseFloat(satInfo);
+        //prompt for additional tasks
+        moreTaskFunction();
+            //If more tasks, then
+            while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
+                //start function
+                newTask = taskFunction("Saturday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
+            }
 }
 //If Sunday Worked    
 if (workSunday === "Yes" || workSunday === "yes" || workSunday === "Y" || workSunday === "y") {
-    // call function and assign to taskInfo
-    var taskInfo = taskFunction(weekDay[6]);
-    // create concoc. of day and info string 
-    var sunTask = weekDay[6] + taskInfo;
-    //prompt for additional tasks
-    var moreTask = prompt("Did you work on another task on " + weekDay[6]);
-    //if Yes
-    if (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
-        // start function
-        newTask = taskFunction (weekDay[6]);
-        // add together
-        sunTask += newTask;
-        //If No
-    }  else {
-        //New Task is 0
-        newTask = 0;
-    }
-    var sunHours = parseFloat(taskInfo) + parseFloat(newTask);
-} else {
-    var sunTask = weekDay[6] + " Not worked\n";
-    var sunHours = 0;
+        // call function and assign to sunInfo
+        var sunInfo = taskFunction(weekDay[6]);
+        // create concoc. of day and info string
+        sunTask = weekDay[6] + sunInfo;
+        // Hours worked
+        sunHours = parseFloat(sunInfo);
+        //prompt for additional tasks
+        moreTaskFunction();
+            //If more tasks, then
+            while  (moreTask === "Yes" || moreTask === "yes" || moreTask === "Y" || moreTask === "y") {
+                //start function
+                newTask = taskFunction("Sunday");
+                // add together
+                monTask += newTask;
+                // find number of hours worked
+                monHours += parseFloat(newTask);
+                // Prompt again
+                moreTaskFunction() ;
+            }
 }
+
    // Hours worked = sum of hours worked every day
 var hoursWorked = monHours + tueHours + wedHours + thuHours + friHours + satHours + sunHours;
 
