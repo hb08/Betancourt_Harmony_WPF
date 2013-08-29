@@ -38,7 +38,7 @@ var listTotal = parseInt(teamList);
     //Add together cost
 var teamTotal = rrTotal + ataTotal + listTotal;
     //Print to Console
-console.log("Your team's total cost is " + teamTotal + " points." + compareTotals(pointTotalGame, teamTotal) + "You had " + rrTotal + " in relics/resources, " + ataTotal + " in ATAs. Your team is " + teamList);
+console.log("Your team's total cost is " + teamTotal + " points." + compareTotals(pointTotalGame, teamTotal) + " You had " + rrTotal + " in relics/resources, " + ataTotal + " in ATAs. Your team is " + teamList);
 
 
 
@@ -87,7 +87,7 @@ function createClixList (pieceNumber) {
         clixTotal += piecePrice;
         clixList += piecePrice + " point " + pieceName+ "\n" ;
             if (pieceNumber === loopCounter) {
-                clixList = clixTotal + " points total, and consists of \n" + clixList;
+                clixList = clixTotal + " points in pieces, and consists of \n" + clixList;
             }
     }
     return clixList;
@@ -97,11 +97,11 @@ function createClixList (pieceNumber) {
 function compareTotals(pointTotalGame, teamTotal){
     var printTotal;
         if (pointTotalGame > teamTotal) {
-            printTotal = "Your team is " + (pointTotalGame - teamTotal) + " under the goal of " + pointTotalGame  + " points.";
-        } else if (pointTotalGame = teamTotal) {
-            printTotal = "Your team is exactly the points needed for the game.";
+            printTotal = " Your team is " + (pointTotalGame - teamTotal) + " under the goal of " + pointTotalGame  + " points.";
+        } else if (pointTotalGame === teamTotal) {
+            printTotal = " Your team is exactly the points needed for the game.";
         } else {
-            var printTotal = "Your team is " + (teamTotal - pointTotalGame)+ " over your goal of " + pointTotalGame  + " points.";
+            printTotal = " Your team is " + (teamTotal - pointTotalGame)+ " over your goal of " + pointTotalGame  + " points.";
         }
     return printTotal;
 }
