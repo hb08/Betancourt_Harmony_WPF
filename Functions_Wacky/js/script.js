@@ -18,13 +18,27 @@ var ataStatus = prompt("Are you playing an Alternate Team Ability?");
         //If so, run function, if not, move on
 var ataTotal = (ataStatus === "Yes" || ataStatus === "yes" || ataStatus === "Y" || ataStatus === "y")  ? ataAssign(themePieces) : 0;
 
-// Let's make integers
+// Variables to use later
+    // loop counter for function
+var loopCounter;
+
+
+// Run the program by...
+    // Making integers of total points in the game
 pointTotalGame = parseInt(pointTotalGame);
+        // the number of pieces played
 pieceNumber = parseInt(pieceNumber);
+        // and the total value of relics and resources
 rrTotal = parseInt(rrTotal);
 
-// Now for some math and logic
-var loopCounter;
+    // Run the clix list function
+var teamList = createClixList(pieceNumber);
+    //Pull integer
+var listTotal = parseInt(teamList);
+    //Add together cost
+var teamTotal = rrTotal + ataTotal + listTotal;
+    //Print to Console
+console.log("Your team's total cost is " + teamTotal + " points." + compareTotals(pointTotalGame, teamTotal) + "You had " + rrTotal + " in relics/resources, " + ataTotal + " in ATAs. Your team is " + teamList);
 
 
 
@@ -71,10 +85,23 @@ function createClixList (pieceNumber) {
             //integer cost
         piecePrice = parseInt(piecePrice);
         clixTotal += piecePrice;
-        clixList += pieceName + " " + piecePrice + "\n" ;
+        clixList += piecePrice + " point " + pieceName+ "\n" ;
             if (pieceNumber === loopCounter) {
-                clixList = clixTotal + " points total.\n" + clixList;
+                clixList = clixTotal + " points total, and consists of \n" + clixList;
             }
     }
     return clixList;
+}
+
+    // Compare totals
+function compareTotals(pointTotalGame, teamTotal){
+    var printTotal;
+        if (pointTotalGame > teamTotal) {
+            printTotal = "Your team is " + (pointTotalGame - teamTotal) + " under the goal of " + pointTotalGame  + " points.";
+        } else if (pointTotalGame = teamTotal) {
+            printTotal = "Your team is exactly the points needed for the game.";
+        } else {
+            var printTotal = "Your team is " + (teamTotal - pointTotalGame)+ " over your goal of " + pointTotalGame  + " points.";
+        }
+    return printTotal;
 }
